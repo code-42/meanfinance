@@ -1,0 +1,24 @@
+<h1>CareerDevs Finance Agile Week</h1>
+<p>Get your own AlphaAdvantage api key at <a href="https://www.alphavantage.co/">Alpha Advantage</a></p>
+
+mongoimport --db CDFinance --collection stocks --type csv --headerline api/data/nyse.csv
+mongoimport --db CDFinance --collection stocks --type csv --headerline api/data/nasdaq.csv
+mongoimport --db CDFinance --collection stocks --type csv --headerline api/data/amex.csv
+
+__Notes:__
+To get the app to run I had to do the following steps on cloud 9
+1. npm install
+2. install mongodb from https://community.c9.io/t/setting-up-mongodb/1717
+   
+    sudo apt-get install -y mongodb-org
+3. chmod a+x mongod  // to make it executable
+4. run ./mongod in one terminal tab
+5. in another terminal tab run node app.js  // CDFinance is running on port 8080 
+6. open browser to https://meanfinance-YOUR_USER_NAME.c9users.io
+
+A few things I noticed:
+1. README.md is misspelled REACME.md so I changed it
+2. README.md needs md formatting, not &lt;html&gt;
+3. missing file css/custom.css  // needed to move logo down  
+4. CDFinance database has 6756 stocks in it already, no need to import from .csv
+5. Deposit Funds page says Find Stocks - easily changed
