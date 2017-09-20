@@ -42,3 +42,5 @@ __Change Log__
 4. changes initial error message to "Stock not found", fo
 5. added vm.error = ''; clears error from page, find-controller.js:13
 6. capitalized "amount" on Deposit Funds page for consistency with other pages -dd
+7. replaced logo img with google font text -dd
+8.
