@@ -40,4 +40,5 @@ __Change Log__
 2. add custom.css file in /public/css folder
 3. move main page logo down 5% in custom.css
 4. changes initial error message to "Stock not found", fo
-5. added vm.error = ''; clears error from page, find-controller.js:13
+5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
+6. 
