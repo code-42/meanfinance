@@ -37,6 +37,7 @@ Dennis figured out how to make additional git push remote
 6. then merge into master branch
 7. then push to master on github
 8. then push to each of your github repos using the remote name above
+9. 
 
 
 
