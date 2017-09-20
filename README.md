@@ -25,9 +25,12 @@ To get the app to run I had to do the following steps on cloud 9
 __GitHub push plan__
 Dennis figured out how to make additional git push remote
 1.  on the shared workspace, add a remote repo
-    git remote add dennis https://github.com/MrOolong/mean_finance_scrum.git
+    git remote add dennis git@github.com:MrOolong/mean_finance_scrum.git
     git remote add luke https://github.com/lukeyyfrancis5/meanfinance.git
     git remote add john https://github.com/Madpoints/meanFinance.git
+
+git@github.com:MrOolong/mean_finance_scrum.git
+
 2. you make edits on your own c9 meanfinance workspace
 3. after you test it on your c9 browser,  
     make sure the shared workspace is in the dev branch
