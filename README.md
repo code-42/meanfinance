@@ -34,6 +34,7 @@ __A few things I noticed:__
 6. Find a way to remove "stock-message" from find-controller.html, until successful response
 7. ToUpperCase() for stock symbol, find-controller
 8. Change the layout of "Stock input box"
+9. Change logo font
 
 __Change Log__
 
