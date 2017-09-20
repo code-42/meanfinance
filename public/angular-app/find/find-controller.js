@@ -1,5 +1,6 @@
 angular.module('cdfinance').controller("FindController", FindController);
-
+// TODO find a way to remove "stock-message" from find-dontroller.html,
+// until successful response
 function FindController($http) {
   var vm = this;
   console.log("findController 5");
@@ -10,7 +11,7 @@ function FindController($http) {
     $http.get("/api/stocks/" + symbol)
       .then(function(response) {
         console.log("found stock")
-        // vm.error = ''; clears error from page 13: find-controller.js
+        // vm.error = ''; clears error from page, find-controller.js:13
         vm.error = '';
         var stockprice = response.data.price
         vm.stockprice = stockprice;

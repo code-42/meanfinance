@@ -12,6 +12,7 @@ function BuyController($http, $window, AuthFactory, jwtHelper, $location) {
       var data = {"symbol" : vm.symbol, "amount": vm.amount}
       
       $http.post('/api/users/'+ username +"/stocks", data).then(function(response) {
+        console.log(response, "15");
         //check the responses
       }).catch(function(error) {
         console.log(error);
