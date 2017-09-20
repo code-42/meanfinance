@@ -33,6 +33,7 @@ __A few things I noticed:__
 5. Deposit Funds page says Find Stocks - easily changed
 6. Find a way to remove "stock-message" from find-controller.html, until successful response
 7. ToUpperCase() for stock symbol, find-controller
+8. Change the layout of "Stock input box"
 
 __Change Log__
 
