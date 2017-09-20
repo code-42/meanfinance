@@ -16,7 +16,7 @@ To get the app to run I had to do the following steps on cloud 9
 4. run ./mongod in one terminal tab
 5. in another terminal tab run node app.js  // CDFinance is running on port 8080 
 6. open browser to https://meanfinance-YOUR_USER_NAME.c9users.io
-7. installed nodemon - will restart server after making changes
+7. installed nodemon(npm install nodemon) - will restart server after making changes
 8. going forward, we do NOT have to do all these steps, just
    *  run ./mongod in one terminal
    *  run nodemon in another terminal
