@@ -22,6 +22,23 @@ To get the app to run I had to do the following steps on cloud 9
    *  run nodemon in another terminal
    *  point your browser to https://meanfinance-code42.c9users.io
 
+__GitHub push plan__
+Dennis figured out how to make additional git push remote
+1.  on the shared workspace, add a remote repo
+    git remote add dennis https://github.com/MrOolong/mean_finance_scrum.git
+    git remote add luke https://github.com/lukeyyfrancis5/meanfinance.git
+    git remote add john https://github.com/Madpoints/meanFinance.git
+2. you make edits on your own c9 meanfinance workspace
+3. after you test it on your c9 browser,  
+    make sure the shared workspace is in the dev branch
+    copy & paste to the shared dev workspace
+4. then we will test again, and then commit the changes
+5. after all the commits are in for the day, we can push from dev branch
+6. then merge into master branch
+7. then push to master on github
+8. then push to each of your github repos using the remote name above
+
+
 
 
 __A few things I noticed:__
@@ -31,8 +48,9 @@ __A few things I noticed:__
 3. missing file css/custom.css  // needed to move logo down  
 4. CDFinance database has 6756 stocks in it already, no need to import from .csv
 5. Deposit Funds page says Find Stocks - easily changed
-6. Find a way to remove "stock-message" from find-controller.html, until successful response
+6. done - Find a way to remove "stock-message" from find-controller.html, until successful response
 7. ToUpperCase() for stock symbol, find-controller
+<<<<<<< HEAD
 8. Change the layout of "Stock input box"
 9. Change logo font
 
@@ -44,3 +62,16 @@ __Change Log__
 4. changes initial error message to "Stock not found", fo
 5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
 6. 
+=======
+8. lf - Change the layout of "Stock input box" "make a limit"- LF
+9. dd- Change logo font
+
+__Change Log__
+
+1. ed - make new dev branch to work in
+2. ed - add custom.css file in /public/css folder
+3. jf - move main page logo down 5% in custom.css
+4. jf - changes initial error message to "Stock not found", fo
+5. jf - added vm.error = ''; clears error from page, find-controller.js:13
+6.  changed Deposit Funds page to say Find Stocks
+>>>>>>> dev
