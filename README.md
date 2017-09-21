@@ -23,24 +23,18 @@ To get the app to run I had to do the following steps on cloud 9
    *  point your browser to https://meanfinance-code42.c9users.io
 
 __GitHub push plan__
-Dennis figured out how to make additional git push remote
-1.  on the shared workspace, add a remote repo
-    git remote add dennis git@github.com:MrOolong/mean_finance_scrum.git
-    git remote add luke https://github.com/lukeyyfrancis5/meanfinance.git
-    git remote add john https://github.com/Madpoints/meanFinance.git
 
-git@github.com:MrOolong/mean_finance_scrum.git
-
-2. you make edits on your own c9 meanfinance workspace
-3. after you test it on your c9 browser,  
-    make sure the shared workspace is in the dev branch
-    copy & paste to the shared dev workspace
-4. then we will test again, and then commit the changes
-5. after all the commits are in for the day, we can push from dev branch
-6. then merge into master branch
-7. then push to master on github
-8. then push to each of your github repos using the remote name above
-9. 
+1. make a workspace on c9 or locally if you prefer
+2. work in your own workspace
+3. clone meanfinance from my github master branch
+4. then in your c9 terminal
+5. git checkout -b dev-YOURNAME   // ex. git checkout -b dev-john
+6. work in your dev-YOURNAME workspace 
+7. commit and push your changes while in dev-YOURNAME
+8. then if you want you can git merge dev-YOURNAME into your master branch on your workspace
+    that will not affect my repo, just don't push your master branch
+9. I will have to manage mergeing your dev branches into my master branch
+    and resolve any merge conflicts
 
 
 
