@@ -51,19 +51,6 @@ __A few things I noticed:__
 5. Deposit Funds page says Find Stocks - easily changed
 6. done - Find a way to remove "stock-message" from find-controller.html, until successful response
 7. ToUpperCase() for stock symbol, find-controller
-<<<<<<< HEAD
-8. Change the layout of "Stock input box"
-9. Change logo font
-
-__Change Log__
-
-1. make new dev branch to work in
-2. add custom.css file in /public/css folder
-3. move main page logo down 5% in custom.css
-4. changes initial error message to "Stock not found", fo
-5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
-6. 
-=======
 8. lf - Change the layout of "Stock input box" "make a limit"- LF
 9. dd- Change logo font
 
@@ -75,4 +62,14 @@ __Change Log__
 4. jf - changes initial error message to "Stock not found", fo
 5. jf - added vm.error = ''; clears error from page, find-controller.js:13
 6.  changed Deposit Funds page to say Find Stocks
->>>>>>> dev
+8. Change the layout of "Stock input box"
+9. Change logo font
+
+__Change Log__
+
+1. make new dev branch to work in
+2. add custom.css file in /public/css folder
+3. move main page logo down 5% in custom.css
+4. changes initial error message to "Stock not found", fo
+5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
+6. dashboard now displays stocks and amounts, vm.stocks = response.data.stocks, dashboard-controller.js:14 - jf
