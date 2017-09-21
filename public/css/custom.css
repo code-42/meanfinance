@@ -1,3 +1,20 @@
 img {
   margin-top: 5%;
 }
+
+#header-div {
+    margin-top: 5%;
+}
+
+.night {
+    background-color: gray;
+    color: white;
+}
+
+.daymode-button {
+    color: black;
+}
+
+.nightmode-button {
+    background-color: gray;
+}

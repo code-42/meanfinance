@@ -16,7 +16,7 @@ To get the app to run I had to do the following steps on cloud 9
 4. run ./mongod in one terminal tab
 5. in another terminal tab run node app.js  // CDFinance is running on port 8080 
 6. open browser to https://meanfinance-YOUR_USER_NAME.c9users.io
-7. installed nodemon - will restart server after making changes
+7. installed nodemon(npm install nodemon) - will restart server after making changes
 8. going forward, we do NOT have to do all these steps, just
    *  run ./mongod in one terminal
    *  run nodemon in another terminal
@@ -58,6 +58,7 @@ __Change Log__
 2. add custom.css file in /public/css folder
 3. move main page logo down 5% in custom.css
 4. changes initial error message to "Stock not found", fo
+<<<<<<< HEAD
 5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
 6. 
 =======
@@ -73,3 +74,8 @@ __Change Log__
 5. jf - added vm.error = ''; clears error from page, find-controller.js:13
 6.  changed Deposit Funds page to say Find Stocks
 >>>>>>> dev
+=======
+5. added vm.error = ''; clears error from page, find-controller.js:13
+6. capitalized "amount" on Deposit Funds page for consistency with other pages -dd
+7. replaced logo img with google font text -dd
+>>>>>>> origin/dev-dennis
