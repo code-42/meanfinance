@@ -46,3 +46,4 @@ __Change Log__
 6. capitalized "amount" on Deposit Funds page for consistency with other pages -dd
 7. replaced logo img with google font text -dd
 8. created body-toggle class to use as selector for the night mode. please add this class to any text element you want white on toggle -dd
+
