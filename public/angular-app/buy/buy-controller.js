@@ -14,8 +14,14 @@ function BuyController($http, $window, AuthFactory, jwtHelper, $location) {
       $http.post('/api/users/'+ username +"/stocks", data).then(function(response) {
         console.log(response, "15");
         //check the responses
+        // displays confirmation message on stock bought
+        vm.message = "Stock Bought";
+        // hides error message
+        vm.error = '';
       }).catch(function(error) {
         console.log(error);
+        // displays error if stock not found
+        vm.error = "Stock not found";
       })
     } else {
       $location.path('/');

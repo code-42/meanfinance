@@ -42,14 +42,16 @@ __Change Log__
 2. add custom.css file in /public/css folder
 3. move main page logo down 5% in custom.css
 4. changes initial error message to "Stock not found", fo
+5. capitalized "amount" on Deposit Funds page for consistency with other pages -dd
+6. replaced logo img with google font text -dd
+7. created body-toggle class to use as selector for the night mode. please add this class to any text element you want white on toggle -dd
+8. added vm.error = ''; clears error from page, find-controller.js:13 - jf
+9. dashboard now displays stocks and amounts, vm.stocks = response.data.stocks, dashboard-controller.js:14 - jf
+10. api key now stored in env variable, jf
+11. hide stock-message on find page when no stock is found, jf
+12. hide stock-message on find page when input field detects key press, jf
 
-5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
-6. dashboard now displays stocks and amounts, vm.stocks = response.data.stocks, dashboard-controller.js:14 - jf
-7. api key now stored in env variable, jf
-8. hide stock-message on find page when no stock is found, jf
-9. hide stock-message on find page when input field detects key press, jf
-
-Storing/Accessing API key-
+__Storing/Accessing API key__
 
 1. For storing your API key create a file named app-env 
     $ touch app-env
@@ -72,9 +74,5 @@ Storing/Accessing API key-
 
 This way we can use our keys in our local environment and be safe from getting this sensitive data exposed to others on Github.
 
-5. added vm.error = ''; clears error from page, find-controller.js:13
-6. capitalized "amount" on Deposit Funds page for consistency with other pages -dd
-7. replaced logo img with google font text -dd
-8. created body-toggle class to use as selector for the night mode. please add this class to any text element you want white on toggle -dd
 
 
