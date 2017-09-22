@@ -57,5 +57,17 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
 # app-env api key store here
 app-env
+=======
+
+# ignore database files
+# database/
+# ./database/
+
+
+# test
+# database/ignore.ME
+
+>>>>>>> 1d6536dfa7a22dcdebe07e53eb3327e80c5448fe
