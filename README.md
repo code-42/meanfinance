@@ -74,6 +74,8 @@ __Change Log__
 5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
 6. dashboard now displays stocks and amounts, vm.stocks = response.data.stocks, dashboard-controller.js:14 - jf
 7. api key now stored in env variable, jf
+8. hide stock-message on find page when no stock is found, jf
+9. hide stock-message on find page when input field detects key press, jf
 
 Storing/Accessing API key-
 
