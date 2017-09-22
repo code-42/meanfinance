@@ -59,3 +59,6 @@ typings/
 
 # git message says cannot merge database files 
 database/
+
+# test
+database/ignore.ME
