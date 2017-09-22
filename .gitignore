@@ -57,6 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+
 # ignore database files
 database/
 ./database/
+
+
+# test
+database/ignore.ME
+

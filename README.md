@@ -64,5 +64,9 @@ __Change Log__
 5. added vm.error = ''; clears error from page, find-controller.js:13
 6. capitalized "amount" on Deposit Funds page for consistency with other pages -dd
 7. replaced logo img with google font text -dd
+<<<<<<< HEAD
 8. lf - Change the layout of "Stock input box" "make a limit"- LF
 9. dd- Change logo font
+=======
+8. created body-toggle class to use as selector for the night mode. please add this class to any text element you want white on toggle -dd
+>>>>>>> dev-dennis
