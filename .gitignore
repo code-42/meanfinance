@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# git message says cannot merge database files 
+database/*
