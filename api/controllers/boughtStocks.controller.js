@@ -36,7 +36,8 @@ module.exports.bStocksGetAll = function(req, res) {
         var stocks = user.stocks;
         var prices = [];
         stocks.forEach(function(stock) {
-          prices.push(stockPrice.returnPrice(stock._id))
+          console.log(stock, "boughtStocks.controller:37");
+          prices.push(stockPrice.returnPrice(stock._id));
         });
         res
           .status(200)

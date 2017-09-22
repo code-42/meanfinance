@@ -73,3 +73,27 @@ __Change Log__
 4. changes initial error message to "Stock not found", fo
 5. added vm.error = ''; clears error from page, find-controller.js:13 - jf
 6. dashboard now displays stocks and amounts, vm.stocks = response.data.stocks, dashboard-controller.js:14 - jf
+7. api key now stored in env variable, jf
+
+Storing/Accessing API key-
+
+1. For storing your API key create a file named app-env 
+    $ touch app-env
+
+2. Add this line to the app-env file and save
+    export API_KEY="Your api key here"
+
+3. Source this file into your local environment using source command
+    $ source app-env
+
+4. Now the API key can be accessed with
+    process.env.API_KEY
+
+5. Replace the API key in meanfinance/api/controllers/shared/stockPrice.js line:2, with process.env.API_KEY
+    example
+        old: "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&apikey="Your API key"&outputsize=compact"
+        new: "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&apikey="+process.env.API_KEY+"&outputsize=compact"
+
+6. Last add app-env to .gitignore so this file is ignored to .git
+
+This way we can use our keys in our local environment and be safe from getting this sensitive data exposed to others on Github.

@@ -10,7 +10,9 @@ function DashboardController( $http, $window, AuthFactory, jwtHelper, $location)
     $http.get('/api/users/'+ username +"/stocks").then(function(response) {
       // Old line:14 'vm.stocks = response.data' 
       // needed to access .stocks object to retrieve stock info for a user
+      console.log(response.data);
       vm.stocks = response.data.stocks;
+      // vm.prices = response.data.prices;
     }).catch(function(error) {
       console.log(error);
     })
