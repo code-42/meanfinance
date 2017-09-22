@@ -7,10 +7,12 @@
 
 $('#switch-color').click(function(){
   $('#body-toggle').toggleClass('night');
-    $('#switch-color').text(function    (i, v){
-        return v === 'Day Mode' ? 'Night Mode' : 'Day Mode'
-    });
-        $('#switch-color').toggleClass('daymode-button');
+  $('.body-toggle').toggleClass('night');
+        $('#switch-color').text(function    (i, v){
+            return v === 'Day Mode' ? 'Night Mode' : 'Day Mode'
+        });
+            $('#switch-color').toggleClass('daymode-button');
+            //$('.night-text').toggleClass('night-text');
 });
 
 //better to toggle visibility of existing?

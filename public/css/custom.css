@@ -3,11 +3,15 @@ img {
 }
 
 #header-div {
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .night {
     background-color: gray;
+    color: white;
+}
+
+.night-text {
     color: white;
 }
 
