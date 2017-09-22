@@ -59,10 +59,10 @@ typings/
 
 
 # ignore database files
-database/
-./database/
+# database/
+# ./database/
 
 
 # test
-database/ignore.ME
+# database/ignore.ME
 
