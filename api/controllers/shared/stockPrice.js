@@ -3,7 +3,7 @@ var _apiUrl = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&apik
 
 module.exports.getPrice = function(req, res, symbol) {
   
-  var url = _apiUrl + "&symbol=" + symbol
+  var url = _apiUrl + "&symbol=" + symbol.toUpperCase();
   
   console.log(url);
 
@@ -17,7 +17,7 @@ module.exports.getPrice = function(req, res, symbol) {
     response.on("data", function (chunk) {
       buffer += chunk;
     }); 
-
+    console.log(buffer);
     response.on("end", function (err) {
       if (err) {
         res
@@ -27,8 +27,11 @@ module.exports.getPrice = function(req, res, symbol) {
         // finished transferring data
         // dump the raw data
         data = JSON.parse(buffer);
-        // console.log(data);
+        
         var stockData = data['Time Series (Daily)']
+        if (stockData === null || stockData === undefined) {
+          return stockData
+        }
         var keys = Object.keys(stockData);
         var price = parseFloat(stockData[keys[0]]['4. close']);
         res
@@ -40,7 +43,7 @@ module.exports.getPrice = function(req, res, symbol) {
 }
 
 module.exports.returnPrice = function(symbol) {
-  var url = _apiUrl + "&symbol=" + symbol
+  var url = _apiUrl + "&symbol=" + symbol.toUpperCase();
   console.log(url);
   var request = https.get(url, function (response) {
     // data is streamed in chunks from the server
@@ -53,7 +56,7 @@ module.exports.returnPrice = function(symbol) {
       buffer += chunk;
       
     }); 
-
+    console.log(buffer);
     response.on("end", function (err) {
       if (err) {
         return err
@@ -62,7 +65,10 @@ module.exports.returnPrice = function(symbol) {
         // dump the raw data
         data = JSON.parse(buffer);
         // console.log(data);
-        var stockData = data['Time Series (Daily)']
+        var stockData = data['Time Series (Daily)'];
+        if (stockData === null || stockData === undefined) {
+          return stockData
+        }
         var keys = Object.keys(stockData);
         return parseFloat(stockData[keys[0]]['4. close']);
       }

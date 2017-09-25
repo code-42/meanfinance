@@ -12,7 +12,7 @@ function DashboardController( $http, $window, AuthFactory, jwtHelper, $location)
       // needed to access .stocks object to retrieve stock info for a user
       console.log(response.data);
       vm.stocks = response.data.stocks;
-      // vm.prices = response.data.prices;
+      vm.prices = response.data.prices;
     }).catch(function(error) {
       console.log(error);
     })

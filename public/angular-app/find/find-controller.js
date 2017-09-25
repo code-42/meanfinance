@@ -9,7 +9,6 @@ function FindController($http) {
   // until successful response
   $('#stock-message').hide();
   var vm = this;
-  console.log("findController 5");
   vm.find = function() {
     var symbol = vm.symbol;
     console.log("8", symbol);
